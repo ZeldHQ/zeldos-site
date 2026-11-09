@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zeldos</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@5.3.0/index.css">
+<style>
+  :root {
+    --bg: #0c0e10;
+    --fg: #d8dee4;
+    --dim: #5c6773;
+    --accent: #7ee787;
+    --cursor: #d8dee4;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cascadia Code", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 24px;
+  }
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+  .prompt { color: var(--dim); }
+  .brand {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0.6em 0 0;
+  }
+  p {
+    color: var(--dim);
+    margin: 0.4em 0 0;
+  }
+  .cursor {
+    display: inline-block;
+    width: 0.55em;
+    height: 1.1em;
+    background: var(--cursor);
+    vertical-align: text-bottom;
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+</head>
+<body>
+  <main>
+    <div><span class="prompt">$</span> whoami</div>
+    <div class="brand">zeldos</div>
+    <h1>status: coming soon<span class="cursor"></span></h1>
+    <p>// building something. check back soon.</p>
+  </main>
+</body>
+</html>
